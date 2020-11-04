@@ -6,6 +6,5 @@ nltk
 numpy
 tensorflow
 pandas
-pickle
 random
 json
