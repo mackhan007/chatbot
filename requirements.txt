@@ -1,0 +1,11 @@
+flask
+pandas
+gunicorn
+flask_restful
+nltk
+numpy
+tensorflow
+pandas
+pickle
+random
+json
