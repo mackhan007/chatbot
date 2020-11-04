@@ -3,6 +3,6 @@ pandas
 gunicorn
 flask_restful
 nltk
-numpy
+numpy==1.16.0
 tensorflow
 pandas
