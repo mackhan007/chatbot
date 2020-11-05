@@ -3,16 +3,16 @@
 		{
 			"tag": "greeting",
 			"patterns": ["Hi", "hey", "hello"],
-			"responses": ["Hi,\nWelcome to the world of automation,what would you like to automate today..", "Hello, Welcome to the world of automation,what would you like to automate today..", "Hi there,I would be your personal assistant,How can I help you today!!"]
+			"responses": ["Hi,\nWelcome to the world of automation, what would you like to automate today..", "Hello, Welcome to the world of automation, what would you like to automate today..", "Hi there, I would be your assistant, How can I help you today!!"]
 		}, 
 		{
 			"tag": "talk",
-			"patterns": ["I would like to talk to your manager", "Could you please get me your manager", "Can i talk to some human"],
-			"responses": ["Sure,\nplease Enter your name and phone number/email id and our manager will contact you as soon as possible,Thank you!!","Sure, Can you please enter your name and phone/email id,we will contact you as soon as possible","Sure, Here is Mr. Shahbaz, our manegers number 123456789,feel free to contact him."]
+			"patterns": ["I would like to talk to your manager", "Could you please get me your manager", "Can I talk to some human"],
+			"responses": ["Sure,\nplease Enter your name and phone number/email id and our manager will contact you as soon as possible, Thank you!!", "Sure, Can you please enter your name and phone/email id, we will contact you as soon as possible", "Sure, Here is Mr. Shahbaz, our manager's number 123456789, feel free to contact him."]
 		},
 		{
 			"tag": "automate",
-			"patterns": ["What all can you automate", "Can you show me the list of the thing you automate", "list all the automation, which can be done here", "automation lists", "verity of automations"],
+			"patterns": ["What all can you automate", "Can you show me the list of the thing you automate", "list all the automation, which can be done here", "automation lists", "verity of automation"],
 			"responses": ["Automation list\n1.Home\n2.installation of cameres\n3.Almost anything you want us to automate"]
 		}
 	]

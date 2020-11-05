@@ -14,7 +14,7 @@ class chat(Resource):
 			reply = chatbot.getresponse(sentance)
 			return {"data": reply}
 		except:
-			return {"error": sentance}
+			abort(404, message="Video doesn't exist, cannot update")
 
 
 api.add_resource(chat, "/chat/<string:sentance>")
