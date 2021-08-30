@@ -1,2 +1,2 @@
 # chatbot
-A simple chatbot using kerns
+A simple chatbot api using kerns
