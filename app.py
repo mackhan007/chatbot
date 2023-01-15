@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, redirect
 from flask_restful import Api, Resource
 import chatbot1
 
@@ -20,7 +20,7 @@ class chat(Resource):
 
 class Main(Resource):
     def get(self):
-        return "Welcome to the chatbot"
+        return "Welcome to the chatbot, goto /chat/<sentance> to get a response"
 
 
 api.add_resource(chat, "/chat/<string:sentance>")
