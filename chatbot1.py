@@ -10,7 +10,7 @@ import os
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
-# nltk.download('punkt')
+nltk.download('punkt')
 
 # loading the adta from json file
 datafile = open('data.json')

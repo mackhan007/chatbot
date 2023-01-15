@@ -18,7 +18,13 @@ class chat(Resource):
             return {"data": "unable to get response"}
 
 
+class Main(Resource):
+    def get(self):
+        return "Welcome to the chatbot"
+
+
 api.add_resource(chat, "/chat/<string:sentance>")
+api.add_resource(Main, "/")
 
 if __name__ == '__main__':
     app.run(debug=True)
