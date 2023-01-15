@@ -1,5 +1,5 @@
 Flask
-Flask_RESTfu
+Flask_RESTful
 keras
 nltk
 numpy
