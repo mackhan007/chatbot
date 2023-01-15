@@ -6,7 +6,7 @@ app = Flask(__name__)
 api = Api(app)
 
 chatbot = chatbot1.chatbot()
-chatbot.load_model()
+chatbot.model_reboot()
 
 
 class chat(Resource):
