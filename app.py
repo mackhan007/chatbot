@@ -1,23 +1,24 @@
 from flask import Flask, request, jsonify
 from flask_restful import Api, Resource
-import random
-import chatbot
+import chatbot1
 
 app = Flask(__name__)
 api = Api(app)
 
-chatbot = chatbot.chatbot()
+chatbot = chatbot1.chatbot()
+chatbot.load_model()
+
 
 class chat(Resource):
-	def get(self, sentance):
-		try:
-			reply = chatbot.getresponse(sentance)
-			return {"data": reply}
-		except:
-			abort(404, message="Video doesn't exist, cannot update")
+    def get(self, sentance):
+        try:
+            reply = chatbot.getresponse(sentance)
+            return {"data": reply}
+        except:
+            return {"data": "unable to get response"}
 
 
 api.add_resource(chat, "/chat/<string:sentance>")
 
 if __name__ == '__main__':
-	app.run(debug=True)
+    app.run(debug=True)
